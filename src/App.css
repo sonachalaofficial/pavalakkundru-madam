@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #17120e;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.madam-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+  .madam-photo {
+    max-height: 100vh;
+    width: auto;
+    max-width: 100%;
+  }
+}
